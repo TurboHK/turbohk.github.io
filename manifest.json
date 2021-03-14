@@ -1,0 +1,13 @@
+{
+  "short_name": "TurboHK",
+wo'lun'z  "name": "渦輪增壓",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+}
