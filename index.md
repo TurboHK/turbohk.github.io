@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<title:TurboHK>
+TurboHK
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+**歡迎來到 TurboHK 的<s>垃圾場</s>**
 
 [Link to another page](./another-page.html).
 
