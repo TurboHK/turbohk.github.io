@@ -3,12 +3,3 @@
 **歡迎來到 TurboHK 的<s>垃圾場</s>**
 
 [想知道更多？（不存在的）](/404.html).
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJM0GE6L47"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZJM0GE6L47');
-</script>
