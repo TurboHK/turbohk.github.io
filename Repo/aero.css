@@ -20,6 +20,18 @@ body{
     animation: animateBg 50s linear infinite;
 }
 
+@keyframes animateBg
+{
+    0%, 100%,
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);   
+    }
+}
+
 .container{
     position: relative;
     display: flex;
@@ -61,19 +73,19 @@ body{
 .container .card h2{
     position: absolute;
     top: -80px;
-    right: 0px;
+    right: 5px;
     font-size: 128px;
     color: rgba(241, 88, 152, 0.15);
 }
 
 .container .card h3{
     font-size: 28px;
-    color: #fff;
+    color: rgb(36, 112, 184);
 }
 
 .container .card p{
     font-size: 16px;
-    color: #fff;
+    color: rgb(104, 40, 177);
     font-weight: 300;
     margin: 10px 0 15px 0;
 }
