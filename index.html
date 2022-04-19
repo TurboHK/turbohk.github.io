@@ -1,4 +1,59 @@
-<head><!-- Global site tag (gtag.js) - Google Analytics -->
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+    <section>
+        <img
+            src="bg.jpg"
+            id="bg"
+        >
+        <img
+            src="moon.png"
+            id="moon"
+        >
+        <img
+            src="mountain.png"
+            id="mountain"
+        >
+        <img
+            src="road.png"
+            id="road"
+            road
+        >
+        <h2 id="text">
+            TurboHK's Page
+        </h2>
+    </section>
+    <script>
+        let bg = document.querySelector('#bg')
+        let moon = document.querySelector('#moon')
+        let mountain = document.querySelector('#mountain')
+        let road = document.querySelector('#road')
+        let text = document.querySelector('#text')
+
+        window.addEventListener('scroll', () => {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+
+            text.style.top = value * 1 + 'px';
+
+
+        })
+    </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJM0GE6L47"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -7,4 +62,7 @@
 
   gtag('config', 'G-ZJM0GE6L47');
 </script>
-403 ERROR
+  
+</body>
+
+</html>
