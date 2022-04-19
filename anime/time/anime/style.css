@@ -21,10 +21,12 @@ body{
     line-height: 86px;
     /* 顶部对齐 */
     vertical-align: top;
+    font-family: 'Roboto Mono', monospace;
 }
 .column{
     /* 设置过渡 */
     transition: 0.3s;
+    font-family: 'Roboto Mono', monospace;
 }
 /* 冒号 */
 .colon{
@@ -32,6 +34,7 @@ body{
     transform: translateY(calc(50vh - 55px));
     /* 过渡 */
     transition: 0.3s;
+    font-family: 'Roboto Mono', monospace;
 }
 .colon::after{
     content: ":";
