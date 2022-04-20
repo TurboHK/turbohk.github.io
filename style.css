@@ -1,16 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap'); /* font-family: 'Ms Madi', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap'); /* font-family: 'Permanent Marker', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');/* font-family: 'Indie Flower', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');/* font-family: 'Fredericka the Great', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');/* font-family: 'Orbitron', sans-serif; */
+/* TITLE */ @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');/* font-family: 'Fredericka the Great', cursive; */
+/* FOOTER */  @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap'); /* font-family: 'Ms Madi', cursive; */
+/* FOOTER */ @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap'); /* font-family: 'Fugaz One', cursive; */
+/* FOOTER */ @import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* font-family: 'Economica', sans-serif; */
+/* CONTENTS */ @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap'); /* font-family: 'Racing Sans One', cursive; */
+/* CONTENTS */ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); /* font-family: 'Roboto Mono', monospace; */
+/* CONTENTS */ @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /* font-family: 'Source Code Pro', monospace; */
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   background-color: #0a2a43;
-  min-height: 1500px;
+  min-height: 1000px;
 }
+
+/* Rolling START */
 section {
   position: relative;
   width: 100%;
@@ -19,7 +26,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
 }
+
 section:before {
   content: '';
   position: absolute;
@@ -27,8 +36,9 @@ section:before {
   width: 100%;
   height: 100px;
   background: linear-gradient(to top #0a2a43 transparent);
-  z-index: 10000;
+  z-index: 100;
 }
+
 section:after {
   content: '';
   position: absolute;
@@ -37,9 +47,10 @@ section:after {
   width: 100%;
   height: 100%;
   background: #0a2a43;
-  z-index: 10000;
+  z-index: 4;
   mix-blend-mode: color;
 }
+
 section img {
   position: absolute;
   top: 0;
@@ -49,6 +60,7 @@ section img {
   object-fit: cover;
   pointer-events: none;
 }
+
 #text {
   position: relative;
   color: #ffffff;
@@ -56,6 +68,170 @@ section img {
   z-index: 1;
   font-family: 'Fredericka the Great', cursive;
 }
+
 #road {
   z-index: 2;
 }
+/* Rolling END */
+
+/* Contents START */
+section .content{
+  width: 80%;
+}
+section .content .text h2{
+  color: #ffffff;
+  font-size: 4em;
+  font-family: 'Racing Sans One', cursive;
+}
+
+section .content .text p{
+  color: #ffffff;
+  font-size: 1.8em;  
+  font-weight: 400;
+  font-family: 'Roboto Mono', monospace;
+}
+
+section .content .text .per{
+  display: flex;
+  float: right;
+}
+
+section .content .text .per p{
+  font-family: 'Source Code Pro', monospace;
+  color: #ffffff;
+  font-size: 1.4em; 
+  font-weight:lighter;
+  right: 0px;
+  align-self: flex-end;
+}
+/* Contents END */
+
+/* Footer START */
+footer{
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  padding: 20px 50px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .icon,
+footer .menu
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .icon li,
+footer .menu li{
+  list-style: none;
+}
+
+footer .icon li a{
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: 'Ms Madi', cursive;
+  font-weight:bold;
+}
+
+footer .icon li a:hover{
+  transform: translateY(-10px);
+  color: #ff8ab7;
+}
+
+footer .menu li a{
+  font-size: 1.2em;
+  color: #ffffff;
+  margin: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Fugaz One', cursive;
+  opacity: 0.7s;
+}
+
+footer .menu li a:hover{
+  opacity: 1;
+  color: #ffa4c7;
+}
+
+footer p{
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-family: 'Economica', sans-serif;
+}
+
+footer .wave{
+  position: absolute;
+  width: 100%;
+  top: -100px;
+  left: 0;
+  height: 100px;
+  background: url(wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave02 7s linear infinite;
+}
+
+footer .wave#wave3{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWave 5s linear infinite;
+}
+
+footer .wave#wave4{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWave02 4s linear infinite;
+}
+
+@keyframes animateWave{
+  0%
+  {
+    background-position-x: 1000px;
+  }
+  100%
+  {
+    background-position-x: 0;
+  }
+}
+
+@keyframes animateWave02{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+/* Footer END*/
