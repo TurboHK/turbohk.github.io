@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<title>Photosensitive Seizure Warning</title>
+<div class="content">
+    <h1>
+        PHOTOSENSITIVE SEIZURE WARNING
+    </h1>
+    <h3>
+      The page you are trying to access contains flashing lights and geometric transformation patterns.
+    </h3>
+    <p>
+        A very small percentage of people may experience a seizure when exposed to certain visual images, including flashing lights or patterns that may appear in our pages.
+        Even people who have no history of seizures or epilepsy may have an undiagnosed condition that can cause these “photosensitive epileptic seizures” while using our websites.<br>
+        <strong>Immediately stop watching and consult a doctor if you experience any symptoms.</strong>
+    </p>
+    <p>
+      These seizures may have a variety of symptoms, including lightheadedness, altered vision, eye or face twitching, jerking or shaking of arms or legs, disorientation, confusion, or momentary loss of awareness. Seizures may also cause loss of consciousness or convulsions that can lead to injury from falling down or striking nearby objects.<br>
+      Parents should watch for or ask their children about the above symptoms. Children and teenagers are more likely than adults to experience these seizures.<br>
+      You may reduce risk of photosensitive epileptic seizures by taking the following precautions:
+    </p>
+    <li>
+      Browse in a well-lit room.
+    </li>
+    <li>
+      Do not browse if you are drowsy or fatigued.
+    </li>
+    <p>
+      If you or any of your relatives have a history of seizures or epilepsy, consult a doctor before visiting the pages.
+    </p>
+    <h2>
+        SWITCH ON TO CONTINE.
+    </h2>
+    <p>
+      <strong>*By turning on the switch, it means that you have fully read and understood the content above and voluntarily assume all possible consequences of visiting the page. Otherwise, please leave this page. Thank you for your cooperation.</strong>
+    </p>
+</div>
+
+<label for="toggle">
+    <input type="checkbox" id="toggle">
+    <span></span>
+</label>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    :root {
+  --button-width: 500px;
+  --button-height: 295px;
+  --toggle-diameter: 255px;
+  --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+  --toggle-shadow-offset: 10px;
+  --toggle-wider: 333px;
+  --color-grey: #E9E9E9;
+  --color-dark-grey: #39393D;
+  --color-green: #30D158;
+}
+
+.content h1{
+  text-align: center;
+  position: relative;
+  font-weight: 800;
+  font-size: 4em;
+  font-family: 'Prompt', sans-serif;
+}
+
+.content h3{
+  text-align: center;
+  position: relative;
+  font-weight: 800;
+  font-size: 1.5em;
+  font-family: 'Prompt', sans-serif;
+  color: #30D158;
+}
+.content p{
+  text-align: center;
+  position: relative;
+  font-weight: 400;
+  font-size: 1em;
+  font-family: 'Cairo', sans-serif;
+}
+
+.content h2{
+  text-align: center;
+  position: relative;
+  font-weight: 800;
+  font-size: 3.5em;
+  font-family: 'Prompt', sans-serif;
+  color: #30D158;
+}
+
+.content li{
+  text-align: center;
+  position: relative;
+  font-weight: 400;
+  font-size: 1em;
+  font-family: 'Cairo', sans-serif;
+}
+
+span {
+  display: inline-block;
+  width: var(--button-width);
+  height: var(--button-height);
+  background-color: var(--color-grey);
+  border-radius: calc(var(--button-height) / 2);
+  position: relative;
+  transition: .3s all ease-in-out;
+}
+
+span::after {
+  content: '';
+  display: inline-block;
+  width: var(--toggle-diameter);
+  height: var(--toggle-diameter);
+  background-color: #fff;
+  border-radius: calc(var(--toggle-diameter) / 2);
+  position: absolute;
+  top: var(--button-toggle-offset);
+  transform: translateX(var(--button-toggle-offset));
+  box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+  transition: .3s all ease-in-out;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+input[type="checkbox"]:checked + span {
+  background-color: var(--color-green);
+}
+
+input[type="checkbox"]:checked + span::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+  box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, .10);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:active + span::after {
+  width: var(--toggle-wider);
+}
+
+input[type="checkbox"]:checked:active + span::after {
+  transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+@media(prefers-color-scheme: dark) {
+  body {
+    background-color: #1C1C1E;
+  }
+  
+  span {
+    background-color: var(--color-dark-grey);
+  }
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function(){
+      $('input[type="checkbox"]').prop("checked",false); // Reset button state
+      $('input[type="checkbox"]').click(function() {
+        if($(this).prop("checked") == true) {
+            window.setTimeout("window.location='https://turbohk.github.io/anime/sakura/anime'",500); // Do whatever you want
+        }
+      });
+    });
+</script>
