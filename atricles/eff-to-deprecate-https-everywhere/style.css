@@ -1,0 +1,280 @@
+/* FOOTER */  @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap'); /* font-family: 'Ms Madi', cursive; */
+/* FOOTER */ @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap'); /* font-family: 'Fugaz One', cursive; */
+/* FOOTER */ @import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* font-family: 'Economica', sans-serif; */
+/* CONTENT */ @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /* font-family: 'Special Elite', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); /* font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  transition: 0.5s;
+}
+
+section .content
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.content .textbox
+{
+    position: relative;
+    max-width: 900px;
+}
+
+.content .textBox h1
+{
+    margin-top: 20px;
+    padding: 8px 20px;
+    /* 大標題顔色 */
+    color: #ff8ab7;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    font-family: 'Special Elite', cursive;
+}
+
+.content .textBox a{
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive;
+  color: #000;
+  list-style: none;
+}
+
+.content .textBox a:hover{
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive;
+  color: #000;
+  list-style: none;
+  color:#3586ff;
+}
+
+.content .textBox h2{
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive;
+  color: #000;
+  list-style: none;
+}
+
+.content .textBox h2:hover{
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive;
+  color: #000;
+  list-style: none;
+  color:#ff8ab7;
+}
+
+.content .textBox h3{
+  font-weight: 600;
+  font-size: 24px;
+  font-family: 'Special Elite', cursive;
+  color: rgb(116, 116, 116);
+  list-style: none;
+
+}
+
+.content .textBox h3:hover{
+  font-weight: 600;
+  font-size: 24px;
+  font-family: 'Special Elite', cursive;
+  list-style: none;
+  color:#ff8ab7;
+}
+
+.content .textBox p{
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+  list-style: none;
+}
+
+.content .textBox p a{
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color:#3586ff;
+  list-style: none;
+}
+
+.content .textBox p a:hover{
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color:#ff8ab7;
+  list-style: none;
+  cursor: alias;
+}
+
+.content .textBox .contents{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+
+}
+
+#credits{
+  font-weight: 350;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  color:#000000;
+}
+
+/* Footer START */
+footer{
+    position: absolute;
+    width: 100%;
+    background: #3586ff;
+    padding: 20px 50px;
+    display: flex;
+    left: 0px;
+    margin-bottom: -150px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100px;
+  }
+  
+  footer .icon,
+  footer .menu
+  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  footer .icon li,
+  footer .menu li{
+    list-style: none;
+  }
+  
+  footer .icon li a{
+    font-size: 2em;
+    color: #ffffff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: 'Ms Madi', cursive;
+    font-weight:bold;
+  }
+  
+  footer .icon li a:hover{
+    transform: translateY(-10px);
+    color: #ff8ab7;
+  }
+  
+  footer .menu li a{
+    font-size: 1.2em;
+    color: #ffffff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Fugaz One', cursive;
+    opacity: 0.7s;
+  }
+  
+  footer .menu li a:hover{
+    opacity: 1;
+    color: #ffa4c7;
+  }
+  
+  footer p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'Economica', sans-serif;
+  }
+  
+  footer .wave{
+    position: absolute;
+    width: 100%;
+    top: -100px;
+    left: 0;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+  }
+  
+  footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+  }
+  
+  footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave02 7s linear infinite;
+  }
+  
+  footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 5s linear infinite;
+  }
+  
+  footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave02 4s linear infinite;
+  }
+  
+  @keyframes animateWave{
+    0%
+    {
+      background-position-x: 1000px;
+    }
+    100%
+    {
+      background-position-x: 0;
+    }
+  }
+  
+  @keyframes animateWave02{
+    0%
+    {
+      background-position-x: 0;
+    }
+    100%
+    {
+      background-position-x: 1000px;
+    }
+  }
+  /* Footer END*/
