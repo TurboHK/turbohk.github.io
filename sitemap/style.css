@@ -2,209 +2,240 @@
 /* FOOTER */ @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap'); /* font-family: 'Fugaz One', cursive; */
 /* FOOTER */ @import url('https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* font-family: 'Economica', sans-serif; */
 /* CONTENT */ @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap'); /* font-family: 'Special Elite', cursive; */
+/* CONTENT */ @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap'); /* font-family: 'Patua One', cursive; */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items:flex-start;
-  transition: 0.5s;
-}
-
-section .content
-{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  section {
     position: relative;
     width: 100%;
+    min-height: 100vh;
+    padding: 100px;
     display: flex;
-    padding-left: 0px;
-    margin-top: 0px;
     justify-content: space-between;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.content .textbox
-{
-    position: relative;
-    max-width: 900px;
-}
-
-.content .textBox h1
-{
-    margin-top: 20px;
-    padding: 8px 20px;
-    /* 大標題顔色 */
-    color: #ff8ab7;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 700;
-    line-height: 1em;
-    font-family: 'Special Elite', cursive;
-}
-
-.content .textBox a{
-  font-weight: 650;
-  font-size: 2em;
-  font-family: 'Special Elite', cursive;
-  color: #000;
-  list-style: none;
-}
-
-.content .textBox a:hover{
-  color: #0099ff;
-  cursor:alias;
-}
-
-.content .textBox h2{
-  color: #000;
-  font-family: 'Special Elite', cursive;
-  font-size: 2em;
-}
-
-.content .textBox h2:hover{
-  color: #0072bc;
-}
-
-
-/* Footer START */
-footer{
-    position: absolute;
-    width: 100%;
-    background: #3586ff;
-    padding: 20px 50px;
-    display: flex;
-    left: 0px;
-    margin-bottom: -150px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100px;
+    align-items:flex-start;
+    transition: 0.5s;
   }
   
-  footer .icon,
-  footer .menu
+  section .content
   {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
+      position: relative;
+      width: 100%;
+      display: flex;
+      padding-left: 0px;
+      margin-top: 0px;
+      justify-content: space-between;
+      align-items: center;
+      justify-content: flex-start;
   }
   
-  footer .icon li,
-  footer .menu li{
+  .content .textbox
+  {
+      position: relative;
+      max-width: 900px;
+  }
+  
+  #welcome{
+    font-weight: 550;
+    font-size: 1.5em;
+    font-family: 'Patua One', cursive;
+    color: #000;
+  }
+
+  #conthead{
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 0px;
+    letter-spacing: 0px;
+  }
+
+  #conthead a{
+    font-weight: 700;
+    font-size: 1.8em;
+    font-family: 'Special Elite', cursive;
+    color: #4b4545;
+    text-decoration: none;
+  }
+
+  #conthead a:hover{
+    font-weight: 700;
+    font-size: 1.8em;
+    font-family: 'Special Elite', cursive;
+    color: #ff8ab7;
+    text-decoration: none;
+  }
+
+  .content .textBox h1
+  {
+      margin-top: 20px;
+      padding: 8px 20px;
+      /* 大標題顔色 */
+      color: #ff8ab7;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 4em;
+      font-weight: 700;
+      line-height: 1em;
+      font-family: 'Special Elite', cursive;
+  }
+  
+  .content .textBox a{
+    font-weight: 550;
+    font-size: 2em;
+    font-family: 'Patua One', cursive;
+    text-decoration: none;
+    color: #000;
     list-style: none;
   }
   
-  footer .icon li a{
+  .content .textBox a:hover{
+    color: #0099ff;
+    cursor:alias;
+  }
+  
+  .content .textBox h2{
+    color: #000;
+    font-family: 'Special Elite', cursive;
     font-size: 2em;
-    color: #ffffff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    font-family: 'Ms Madi', cursive;
-    font-weight:bold;
   }
   
-  footer .icon li a:hover{
-    transform: translateY(-10px);
-    color: #ff8ab7;
+  .content .textBox h2:hover{
+    color: #0072bc;
   }
-  
-  footer .menu li a{
-    font-size: 1.2em;
-    color: #ffffff;
-    margin: 0 10px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Fugaz One', cursive;
-    opacity: 0.7s;
-  }
-  
-  footer .menu li a:hover{
-    opacity: 1;
-    color: #ffa4c7;
-  }
-  
-  footer p{
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.1em;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-family: 'Economica', sans-serif;
-  }
-  
-  footer .wave{
-    position: absolute;
-    width: 100%;
-    top: -100px;
-    left: 0;
-    height: 100px;
-    background: url(wave.png);
-    background-size: 1000px 100px;
-  }
-  
-  footer .wave#wave1{
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWave 4s linear infinite;
-  }
-  
-  footer .wave#wave2{
-    z-index: 999;
-    opacity: 0.5;
-    bottom: 10px;
-    animation: animateWave02 7s linear infinite;
-  }
-  
-  footer .wave#wave3{
-    z-index: 1000;
-    opacity: 0.2;
-    bottom: 15px;
-    animation: animateWave 5s linear infinite;
-  }
-  
-  footer .wave#wave4{
-    z-index: 999;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animateWave02 4s linear infinite;
-  }
-  
-  @keyframes animateWave{
-    0%
-    {
-      background-position-x: 1000px;
+
+  /* Footer START */
+  footer{
+      position: absolute;
+      width: 100%;
+      background: #3586ff;
+      padding: 20px 50px;
+      display: flex;
+      left: 0px;
+      margin-bottom: -150px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100px;
     }
-    100%
+    
+    footer .icon,
+    footer .menu
     {
-      background-position-x: 0;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
     }
-  }
-  
-  @keyframes animateWave02{
-    0%
-    {
-      background-position-x: 0;
+    
+    footer .icon li,
+    footer .menu li{
+      list-style: none;
     }
-    100%
-    {
-      background-position-x: 1000px;
+    
+    footer .icon li a{
+      font-size: 2em;
+      color: #ffffff;
+      margin: 0 10px;
+      display: inline-block;
+      transition: 0.5s;
+      text-decoration: none;
+      font-family: 'Ms Madi', cursive;
+      font-weight:bold;
     }
-  }
-  /* Footer END*/
+    
+    footer .icon li a:hover{
+      transform: translateY(-10px);
+      color: #ff8ab7;
+    }
+    
+    footer .menu li a{
+      font-size: 1.2em;
+      color: #ffffff;
+      margin: 0 10px;
+      display: inline-block;
+      text-decoration: none;
+      font-family: 'Fugaz One', cursive;
+      opacity: 0.7s;
+    }
+    
+    footer .menu li a:hover{
+      opacity: 1;
+      color: #ffa4c7;
+    }
+    
+    footer p{
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.1em;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-family: 'Economica', sans-serif;
+    }
+    
+    footer .wave{
+      position: absolute;
+      width: 100%;
+      top: -100px;
+      left: 0;
+      height: 100px;
+      background: url(wave.png);
+      background-size: 1000px 100px;
+    }
+    
+    footer .wave#wave1{
+      z-index: 1000;
+      opacity: 1;
+      bottom: 0;
+      animation: animateWave 4s linear infinite;
+    }
+    
+    footer .wave#wave2{
+      z-index: 999;
+      opacity: 0.5;
+      bottom: 10px;
+      animation: animateWave02 7s linear infinite;
+    }
+    
+    footer .wave#wave3{
+      z-index: 1000;
+      opacity: 0.2;
+      bottom: 15px;
+      animation: animateWave 5s linear infinite;
+    }
+    
+    footer .wave#wave4{
+      z-index: 999;
+      opacity: 0.7;
+      bottom: 20px;
+      animation: animateWave02 4s linear infinite;
+    }
+    
+    @keyframes animateWave{
+      0%
+      {
+        background-position-x: 1000px;
+      }
+      100%
+      {
+        background-position-x: 0;
+      }
+    }
+    
+    @keyframes animateWave02{
+      0%
+      {
+        background-position-x: 0;
+      }
+      100%
+      {
+        background-position-x: 1000px;
+      }
+    }
+    /* Footer END*/
