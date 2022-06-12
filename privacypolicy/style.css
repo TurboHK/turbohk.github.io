@@ -155,6 +155,41 @@ section .content
   color:#000000;
 }
 
+#date{
+  color: #000000;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#category{
+  color: #5a5a5a;
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: 'Staatliches', cursive;
+}
+
+#CATLINK{
+  color: #5a5a5a;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Staatliches', cursive;
+  text-decoration: none;
+}
+
+#CATLINK:hover{
+  color:#3586ff;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: 'Staatliches', cursive;
+}
+
+#imgnote{
+  color: #5a5a5a;
+  font-size: 1em;
+  font-weight: 400;
+}
+
 /* Footer START */
 footer{
     position: absolute;
