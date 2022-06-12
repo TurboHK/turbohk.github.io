@@ -54,6 +54,23 @@ section .content
     font-family: 'Special Elite', cursive;
 }
 
+.content .textBox a{
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive;
+  color: #000;
+  list-style: none;
+}
+
+.content .textBox a:hover{
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Special Elite', cursive;
+  color: #000;
+  list-style: none;
+  color:#3586ff;
+}
+
 .content .textBox p{
   font-weight: 400;
   font-size: 24px;
